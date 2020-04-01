@@ -23,7 +23,7 @@ module.exports = {
     head: [["link", {rel: "icon", href: `/favicon.ico`}]],
     themeConfig: {
         repo: "baomidou/mybatis-plus",
-        docsRepo: "baomidou/mybatis-plus-doc",
+        docsRepo: "iiishenggg/newBook.github.io",
         editLinks: true,
         locales: {
             "/": {
@@ -124,7 +124,7 @@ module.exports = {
                     {
                         text: "Changelog",
                         link:
-                            "https://github.com/baomidou/mybatis-plus/blob/3.0/CHANGELOG.md"
+                            "https://github.com/iiishenggg/newBook.github.io/blob/3.0/CHANGELOG.md"
                     }
 
                 ],
