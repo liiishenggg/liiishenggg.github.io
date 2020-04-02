@@ -22,7 +22,7 @@ module.exports = {
     },
     head: [["link", {rel: "icon", href: `/favicon.ico`}]],
     themeConfig: {
-        repo: "baomidou/mybatis-plus",
+        repo: "iiishenggg/newBook.github.io",
         docsRepo: "iiishenggg/newBook.github.io",
         editLinks: true,
         locales: {
