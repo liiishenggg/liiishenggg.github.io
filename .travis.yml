@@ -34,4 +34,4 @@ after_success:
   - git add -A
   - git commit -m "deploy at `date +\"%Y-%m-%d %H:%M:%S\"`"
   - git branch -a
-  - git push --force --quiet "https://liiishenggg@163.com:zj112356@${GITHUB_REPO}" gh-pages:gh-pages
+  - git push --force --quiet "https://liiishenggg:{CI_TOKEN}@${GITHUB_REPO}" gh-pages:gh-pages
