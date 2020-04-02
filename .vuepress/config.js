@@ -142,7 +142,7 @@ function genGuideSidebar(isZh) {
         {
             title: isZh ? "快速入门" : "Getting Start",
             collapsable: false,
-            children: ["", "quick-start", "install", "config", "annotation"]
+            children: ["","apollo", "quick-start", "install", "config", "annotation"]
         },
         {
             title: isZh ? "核心功能" : "Core",
