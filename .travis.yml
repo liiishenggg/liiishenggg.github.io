@@ -16,8 +16,8 @@ branches:
 
 env:
   global:
-    - GITHUB_REPO: github.com/liiishenggg/liiishenggg.github.io
-    - CODING_REPO: github.com/liiishenggg/liiishenggg.github.io
+    - GITHUB_REPO: github.com/liiishenggg/newBook
+    - CODING_REPO: github.com/liiishenggg/newBook
 
 before_install:
   - export TZ=Asia/Shanghai
