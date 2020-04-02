@@ -1,50 +1,134 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>MyBatis-Plus</title>
-    <meta name="description" content="为简化开发而生">
-    <link rel="icon" href="/newBook/favicon.ico">
-    
-    <link rel="preload" href="/newBook/assets/css/0.styles.341ad477.css" as="style"><link rel="preload" href="/newBook/assets/js/app.91c935a8.js" as="script"><link rel="preload" href="/newBook/assets/js/2.c0808b14.js" as="script"><link rel="preload" href="/newBook/assets/js/43.9ab8c69b.js" as="script"><link rel="prefetch" href="/newBook/assets/js/10.0093eac1.js"><link rel="prefetch" href="/newBook/assets/js/11.a60a68bf.js"><link rel="prefetch" href="/newBook/assets/js/12.26ab882b.js"><link rel="prefetch" href="/newBook/assets/js/13.92dbaef6.js"><link rel="prefetch" href="/newBook/assets/js/14.e061d2ef.js"><link rel="prefetch" href="/newBook/assets/js/15.8d76eaf1.js"><link rel="prefetch" href="/newBook/assets/js/16.92de9264.js"><link rel="prefetch" href="/newBook/assets/js/17.7ef2e1ab.js"><link rel="prefetch" href="/newBook/assets/js/18.34510348.js"><link rel="prefetch" href="/newBook/assets/js/19.b205109a.js"><link rel="prefetch" href="/newBook/assets/js/20.e07a1bc9.js"><link rel="prefetch" href="/newBook/assets/js/21.5c129bd4.js"><link rel="prefetch" href="/newBook/assets/js/22.634aa245.js"><link rel="prefetch" href="/newBook/assets/js/23.bca0d0ea.js"><link rel="prefetch" href="/newBook/assets/js/24.22aac4c3.js"><link rel="prefetch" href="/newBook/assets/js/25.a03914bb.js"><link rel="prefetch" href="/newBook/assets/js/26.7b32154f.js"><link rel="prefetch" href="/newBook/assets/js/27.6c45ac44.js"><link rel="prefetch" href="/newBook/assets/js/28.47f92f9d.js"><link rel="prefetch" href="/newBook/assets/js/29.a094630a.js"><link rel="prefetch" href="/newBook/assets/js/3.f2cffe1d.js"><link rel="prefetch" href="/newBook/assets/js/30.06064e37.js"><link rel="prefetch" href="/newBook/assets/js/31.d49553c5.js"><link rel="prefetch" href="/newBook/assets/js/32.1c9d7e5f.js"><link rel="prefetch" href="/newBook/assets/js/33.94e3a167.js"><link rel="prefetch" href="/newBook/assets/js/34.c63b7f36.js"><link rel="prefetch" href="/newBook/assets/js/35.1d79f9c2.js"><link rel="prefetch" href="/newBook/assets/js/36.104f5d40.js"><link rel="prefetch" href="/newBook/assets/js/37.26913d5c.js"><link rel="prefetch" href="/newBook/assets/js/38.49b03660.js"><link rel="prefetch" href="/newBook/assets/js/39.efc49d62.js"><link rel="prefetch" href="/newBook/assets/js/4.16a3f846.js"><link rel="prefetch" href="/newBook/assets/js/40.fd4b191c.js"><link rel="prefetch" href="/newBook/assets/js/41.7a23f238.js"><link rel="prefetch" href="/newBook/assets/js/42.6039aacf.js"><link rel="prefetch" href="/newBook/assets/js/44.c4da57fa.js"><link rel="prefetch" href="/newBook/assets/js/45.4223f4df.js"><link rel="prefetch" href="/newBook/assets/js/46.727a78e2.js"><link rel="prefetch" href="/newBook/assets/js/47.4c8a5143.js"><link rel="prefetch" href="/newBook/assets/js/48.4188dbb4.js"><link rel="prefetch" href="/newBook/assets/js/49.106c0e81.js"><link rel="prefetch" href="/newBook/assets/js/5.898bb8aa.js"><link rel="prefetch" href="/newBook/assets/js/50.73d20ae0.js"><link rel="prefetch" href="/newBook/assets/js/51.43ddf744.js"><link rel="prefetch" href="/newBook/assets/js/52.be6f4c78.js"><link rel="prefetch" href="/newBook/assets/js/53.75ff6d52.js"><link rel="prefetch" href="/newBook/assets/js/54.7315b682.js"><link rel="prefetch" href="/newBook/assets/js/55.8992a152.js"><link rel="prefetch" href="/newBook/assets/js/56.d0bbd1a6.js"><link rel="prefetch" href="/newBook/assets/js/57.a370e15f.js"><link rel="prefetch" href="/newBook/assets/js/58.1f2ebe44.js"><link rel="prefetch" href="/newBook/assets/js/59.6c34c0b4.js"><link rel="prefetch" href="/newBook/assets/js/6.02621966.js"><link rel="prefetch" href="/newBook/assets/js/60.3c5012cb.js"><link rel="prefetch" href="/newBook/assets/js/61.401ad44c.js"><link rel="prefetch" href="/newBook/assets/js/62.3cb1f8e9.js"><link rel="prefetch" href="/newBook/assets/js/63.cbbeee63.js"><link rel="prefetch" href="/newBook/assets/js/64.636139f4.js"><link rel="prefetch" href="/newBook/assets/js/65.87a823e2.js"><link rel="prefetch" href="/newBook/assets/js/66.b5141216.js"><link rel="prefetch" href="/newBook/assets/js/67.3266aa6e.js"><link rel="prefetch" href="/newBook/assets/js/68.efcfaba1.js"><link rel="prefetch" href="/newBook/assets/js/69.292f115e.js"><link rel="prefetch" href="/newBook/assets/js/7.54cba291.js"><link rel="prefetch" href="/newBook/assets/js/70.bd8f7769.js"><link rel="prefetch" href="/newBook/assets/js/71.8cf629b9.js"><link rel="prefetch" href="/newBook/assets/js/8.7bcbaceb.js"><link rel="prefetch" href="/newBook/assets/js/9.66ce50ed.js">
-    <link rel="stylesheet" href="/newBook/assets/css/0.styles.341ad477.css">
-  </head>
-  <body>
-    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/newBook/" class="home-link router-link-active"><!----> <span class="site-name">MyBatis-Plus</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/newBook/guide/" class="nav-link router-link-active">指南</a></div><div class="nav-item"><a href="/newBook/config/" class="nav-link">配置</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">生态</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://gitee.com/baomidou/kisso" target="_blank" rel="noopener noreferrer" class="nav-link external">
-  Kisso 单点登录
-  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/baomidou/lock4j-spring-boot-starter" target="_blank" rel="noopener noreferrer" class="nav-link external">
-  Lock4j 分布式锁
-  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://github.com/baomidou/dynamic-datasource-spring-boot-starter" target="_blank" rel="noopener noreferrer" class="nav-link external">
-  Dynamic Datasource 动态数据源
-  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://github.com/baomidou/jobs" target="_blank" rel="noopener noreferrer" class="nav-link external">
-  Jobs 分布式任务调度平台
-  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><a href="https://github.com/baomidou/mybatis-plus/blob/3.0/CHANGELOG.md" target="_blank" rel="noopener noreferrer" class="nav-link external">
-  更新日志
-  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">3.0 文档</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://mybatis.plus" target="_blank" rel="noopener noreferrer" class="nav-link external">
-  3.X 文档
-  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://baomidou.gitee.io/mybatis-plus-doc/#/" target="_blank" rel="noopener noreferrer" class="nav-link external">
-  2.X 文档
-  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/newBook/guide/Apollo.html" class="nav-link router-link-exact-active router-link-active">简体中文</a></li><li class="dropdown-item"><!----> <a href="/newBook/en/" class="nav-link">English</a></li></ul></div></div> <a href="https://github.com/github.com/liiishenggg/newBook" target="_blank" rel="noopener noreferrer" class="repo-link">
-    GitHub
-    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/newBook/guide/" class="nav-link router-link-active">指南</a></div><div class="nav-item"><a href="/newBook/config/" class="nav-link">配置</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">生态</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://gitee.com/baomidou/kisso" target="_blank" rel="noopener noreferrer" class="nav-link external">
-  Kisso 单点登录
-  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/baomidou/lock4j-spring-boot-starter" target="_blank" rel="noopener noreferrer" class="nav-link external">
-  Lock4j 分布式锁
-  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://github.com/baomidou/dynamic-datasource-spring-boot-starter" target="_blank" rel="noopener noreferrer" class="nav-link external">
-  Dynamic Datasource 动态数据源
-  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://github.com/baomidou/jobs" target="_blank" rel="noopener noreferrer" class="nav-link external">
-  Jobs 分布式任务调度平台
-  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><a href="https://github.com/baomidou/mybatis-plus/blob/3.0/CHANGELOG.md" target="_blank" rel="noopener noreferrer" class="nav-link external">
-  更新日志
-  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">3.0 文档</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://mybatis.plus" target="_blank" rel="noopener noreferrer" class="nav-link external">
-  3.X 文档
-  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://baomidou.gitee.io/mybatis-plus-doc/#/" target="_blank" rel="noopener noreferrer" class="nav-link external">
-  2.X 文档
-  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/newBook/guide/Apollo.html" class="nav-link router-link-exact-active router-link-active">简体中文</a></li><li class="dropdown-item"><!----> <a href="/newBook/en/" class="nav-link">English</a></li></ul></div></div> <a href="https://github.com/github.com/liiishenggg/newBook" target="_blank" rel="noopener noreferrer" class="repo-link">
-    GitHub
-    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>快速入门</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/newBook/guide/" class="sidebar-link">简介</a></li><li><a href="/newBook/guide/quick-start.html" class="sidebar-link">快速开始TopUnicornTopUnicornTopUnicornTopUnicorn</a></li><li><a href="/newBook/guide/install.html" class="sidebar-link">安装</a></li><li><a href="/newBook/guide/config.html" class="sidebar-link">配置</a></li><li><a href="/newBook/guide/annotation.html" class="sidebar-link">注解</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>核心功能</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/newBook/guide/generator.html" class="sidebar-link">代码生成器</a></li><li><a href="/newBook/guide/crud-interface.html" class="sidebar-link">CRUD 接口</a></li><li><a href="/newBook/guide/wrapper.html" class="sidebar-link">条件构造器</a></li><li><a href="/newBook/guide/page.html" class="sidebar-link">分页插件</a></li><li><a href="/newBook/guide/sequence.html" class="sidebar-link">Sequence主键</a></li><li><a href="/newBook/guide/id-generator.html" class="sidebar-link">自定义ID生成器</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>插件扩展</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/newBook/guide/hot-loading.html" class="sidebar-link">热加载</a></li><li><a href="/newBook/guide/logic-delete.html" class="sidebar-link">逻辑删除</a></li><li><a href="/newBook/guide/enum.html" class="sidebar-link">通用枚举</a></li><li><a href="/newBook/guide/typehandler.html" class="sidebar-link">字段类型处理器</a></li><li><a href="/newBook/guide/auto-fill-metainfo.html" class="sidebar-link">自动填充功能</a></li><li><a href="/newBook/guide/sql-injector.html" class="sidebar-link">Sql 注入器</a></li><li><a href="/newBook/guide/block-attack-sql-parser.html" class="sidebar-link">攻击 SQL 阻断解析器</a></li><li><a href="/newBook/guide/performance-analysis-plugin.html" class="sidebar-link">性能分析插件</a></li><li><a href="/newBook/guide/p6spy.html" class="sidebar-link">执行 SQL 分析打印</a></li><li><a href="/newBook/guide/optimistic-locker-plugin.html" class="sidebar-link">乐观锁插件</a></li><li><a href="/newBook/guide/dynamic-datasource.html" class="sidebar-link">/guide/dynamic-datasource.html</a></li><li><a href="/newBook/guide/dts.html" class="sidebar-link">分布式事务</a></li><li><a href="/newBook/guide/tenant.html" class="sidebar-link">多租户 SQL 解析器</a></li><li><a href="/newBook/guide/dynamic-table-name-parser.html" class="sidebar-link">动态表名 SQL 解析器</a></li><li><a href="/newBook/guide/mybatisx-idea-plugin.html" class="sidebar-link">MybatisX 快速开发插件</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>FAQ</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/newBook/guide/faq.html" class="sidebar-link">常见问题</a></li><li><a href="/newBook/guide/donate.html" class="sidebar-link">捐赠支持</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="apollo配置中心使用说明"><a href="#apollo配置中心使用说明" aria-hidden="true" class="header-anchor">#</a> <center>Apollo配置中心使用说明</center></h2> <p>​</p> <p>​	目前框架配置中心由spring cloud config替换为Apollo配置中心。开发环境配置已经在公司部署完毕并使用。</p> <p>访问地址为<a href="http://192.168.10.132:8070/" target="_blank" rel="noopener noreferrer">http://192.168.10.132:8070<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>。服务配置为中心统一配置，多环境部署。开发默认环境为“DEV”，且提供基础环境配置，默认各个领域都参照配置。</p> <p>期望达到理想要求是各个领域只需要启动各自领域的基础工程，其他依赖工程和服务都在对应的环境部署。尽量保证与今后的测试，生产环境一致。</p> <p><strong>如有特殊要求需要修改本地配置，比如临时调整代码做测试等。可以通过如下方法设置。</strong></p> <blockquote><p>配置中心默认在本机缓存配置文件，以配置中心服务不可用时保证系统可以启用。缓存路径为</p> <p>/opt/data/$appId/config-cache/XXX.properties（Mac/Linux）</p> <p>C:\opt\data\$appId\config-cache\XXX.properties（Windows）</p></blockquote> <p>如图：</p> <p><img src="C:%5CUsers%5Ctzm%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1566200012436.png" alt="1566200012436"></p> <p>Apollo客户端还支持本地开发模式，这个主要用于当开发环境无法连接Apollo服务器的时候，或者需要临时增加特殊配置的时候。</p> <p>在本地开发模式下，Apollo只会从本地文件读取配置信息，不会从Apollo服务器读取配置。</p> <p>可以通过下面的步骤开启Apollo本地开发模式。</p> <h3 id="_1-本地开发修改环境"><a href="#_1-本地开发修改环境" aria-hidden="true" class="header-anchor">#</a> 1.本地开发修改环境</h3> <blockquote><p>修改/opt/settings/server.properties（Mac/Linux）或C:\opt\settings\server.properties（Windows）文件，设置env为Local：</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>env=Local
-</code></pre></div><p>如图:</p> <p><img src="C:%5CUsers%5Ctzm%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1566200214754.png" alt="1566200214754"></p> <p><img src="C:%5CUsers%5Ctzm%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1566200231980.png" alt="1566200231980"></p> <p>此时会读取本地缓存的配置文件，可以自行添加修改后启动项目。</p> <h3 id="_2-阿里云配置中心本地开发使用"><a href="#_2-阿里云配置中心本地开发使用" aria-hidden="true" class="header-anchor">#</a> 2.阿里云配置中心本地开发使用</h3> <p>针对某些项目本机的开发环境需要使用阿里云部署的配置中心，如果直接配置阿里云的公网地址是无法拉取到配置的。因为Apollo的<code>apollo-configservice</code>和<code>apollo-adminservice</code>是基于内网可信网络设计的，所以出于安全考虑，不会将<code>apollo-configservice</code>和<code>apollo-adminservice</code>直接暴露在公网。</p> <blockquote><p>解决办法：通过启动参数-Dapollo.configService=http://config-service的公网IP:端口来跳过meta service的服务发现</p></blockquote> <p><img src="C:%5CUsers%5Ctzm%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1568286099488.png" alt="1568286099488"></p> <h3 id="_3-前端配置接入配置中心"><a href="#_3-前端配置接入配置中心" aria-hidden="true" class="header-anchor">#</a> 3.前端配置接入配置中心</h3> <p>目前前端工程有配置项目跟代码工程剥离的需求，所以Apollo配置中心提供基于Restfull的配置拉取API。具体使用方法如下：</p> <h4 id="_3-1通过带缓存的http接口从apollo读取配置"><a href="#_3-1通过带缓存的http接口从apollo读取配置" aria-hidden="true" class="header-anchor">#</a> 3.1通过带缓存的Http接口从Apollo读取配置</h4> <p>该接口会从缓存中获取配置，适合频率较高的配置拉取请求，如简单的每30秒轮询一次配置。</p> <p>由于缓存最多会有一秒的延时，所以如果需要配合配置推送通知实现实时更新配置的话，请使用<a href="">3.2 通过不带缓存的Http接口从Apollo读取配置</a></p> <h5 id="_3-1-1-http接口说明"><a href="#_3-1-1-http接口说明" aria-hidden="true" class="header-anchor">#</a> 3.1.1 Http接口说明</h5> <p><strong>URL</strong>: {config_server_url}/configfiles/json/{appId}/{clusterName}/{namespaceName}?ip={clientIp}</p> <p><strong>Method</strong>: GET</p> <table><thead><tr><th>参数名</th> <th>是否必须</th> <th>参数值</th> <th>备注</th></tr></thead> <tbody><tr><td>config_server_url</td> <td>是</td> <td>Apollo配置服务的地址</td> <td></td></tr> <tr><td>appId</td> <td>是</td> <td>应用的appId</td> <td></td></tr> <tr><td>clusterName</td> <td>是</td> <td>集群名</td> <td>一般情况下传入 default 即可。 如果希望配置按集群划分，可以参考<a href="">集群独立配置说明</a>做相关配置，然后在这里填入对应的集群名。</td></tr> <tr><td>namespaceName</td> <td>是</td> <td>Namespace的名字</td> <td>如果没有新建过Namespace的话，传入application即可。 如果创建了Namespace，并且需要使用该Namespace的配置，则传入对应的Namespace名字。<strong>需要注意的是对于properties类型的namespace，只需要传入namespace的名字即可，如application。对于其它类型的namespace，需要传入namespace的名字加上后缀名，如datasources.json</strong></td></tr> <tr><td>ip</td> <td>否</td> <td>应用部署的机器ip</td> <td>这个参数是可选的，用来实现灰度发布。 如果不想传这个参数，请注意URL中从?号开始的query parameters整个都不要出现。</td></tr></tbody></table> <p>使用公司环境测试 http://192.168.10.132:8080/configfiles/json/demo/default/application</p> <h5 id="_3-1-2-http接口返回格式"><a href="#_3-1-2-http接口返回格式" aria-hidden="true" class="header-anchor">#</a> 3.1.2 Http接口返回格式</h5> <p>该Http接口返回的是JSON格式、UTF-8编码，包含了对应namespace中所有的配置项。</p> <p>返回内容Sample如下：</p> <p><img src="C:%5CUsers%5Ctzm%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1570792899353.png" alt="1570792899353"></p> <h4 id="_3-2-通过不带缓存的http接口从apollo读取配置"><a href="#_3-2-通过不带缓存的http接口从apollo读取配置" aria-hidden="true" class="header-anchor">#</a> 3.2 通过不带缓存的Http接口从Apollo读取配置</h4> <p>该接口会直接从数据库中获取配置，可以配合配置推送通知实现实时更新配置。</p> <h5 id="_3-2-1-http接口说明"><a href="#_3-2-1-http接口说明" aria-hidden="true" class="header-anchor">#</a> 3.2.1 Http接口说明</h5> <p><strong>URL</strong>: {config_server_url}/configs/{appId}/{clusterName}/{namespaceName}?releaseKey={releaseKey}&amp;ip={clientIp}</p> <p><strong>Method</strong>: GET</p> <p><strong>参数说明</strong></p> <table><thead><tr><th>参数名</th> <th>是否必须</th> <th>参数值</th> <th>备注</th></tr></thead> <tbody><tr><td>config_server_url</td> <td>是</td> <td>Apollo配置服务的地址</td> <td></td></tr> <tr><td>appId</td> <td>是</td> <td>应用的appId</td> <td></td></tr> <tr><td>clusterName</td> <td>是</td> <td>集群名</td> <td>一般情况下传入 default 即可。 如果希望配置按集群划分，可以参考<a href="">集群独立配置说明</a>做相关配置，然后在这里填入对应的集群名。</td></tr> <tr><td>namespaceName</td> <td>是</td> <td>Namespace的名字</td> <td>如果没有新建过Namespace的话，传入application即可。 如果创建了Namespace，并且需要使用该Namespace的配置，则传入对应的Namespace名字。<strong>需要注意的是对于properties类型的namespace，只需要传入namespace的名字即可，如application。对于其它类型的namespace，需要传入namespace的名字加上后缀名，如datasources.json</strong></td></tr> <tr><td>releaseKey</td> <td>否</td> <td>上一次的releaseKey</td> <td>将上一次返回对象中的releaseKey传入即可，用来给服务端比较版本，如果版本比下来没有变化，则服务端直接返回304以节省流量和运算</td></tr> <tr><td>ip</td> <td>否</td> <td>应用部署的机器ip</td> <td>这个参数是可选的，用来实现灰度发布。</td></tr></tbody></table> <p>使用公司环境测试 http://192.168.10.132:8080/configs/demo/default/application</p> <h5 id="_3-2-2-http接口返回格式"><a href="#_3-2-2-http接口返回格式" aria-hidden="true" class="header-anchor">#</a> 3.2.2 Http接口返回格式</h5> <p>该Http接口返回的是JSON格式、UTF-8编码。</p> <p>如果配置没有变化（传入的releaseKey和服务端的相等），则返回HttpStatus 304，response body为空。</p> <p>如果配置有变化，则会返回HttpStatus 200，response body为对应namespace的meta信息以及其中所有的配置项。</p> <p>返回内容Sample如下：</p> <p><img src="C:%5CUsers%5Ctzm%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1570793098314.png" alt="1570793098314"></p> <blockquote><p>server.properties的配置文件还可以设置多环境，集群，appid切换等。目前开发暂时用不到这些配置。后续根据情况再跟大家补充相关配置的使用讲解。</p></blockquote></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/github.com/liiishenggg/newBook/edit/master/guide/Apollo.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">上次更新: </span> <span class="time">2020-4-2 16:15:47</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
-    <script src="/newBook/assets/js/2.c0808b14.js" defer></script><script src="/newBook/assets/js/43.9ab8c69b.js" defer></script><script src="/newBook/assets/js/app.91c935a8.js" defer></script>
-  </body>
-</html>
+# apllo
+
+## <center>Apollo配置中心使用说明</center>
+
+​	
+
+​	目前框架配置中心由spring cloud config替换为Apollo配置中心。开发环境配置已经在公司部署完毕并使用。
+
+访问地址为[http://192.168.10.132:8070](http://192.168.10.132:8070/)。服务配置为中心统一配置，多环境部署。开发默认环境为“DEV”，且提供基础环境配置，默认各个领域都参照配置。
+
+期望达到理想要求是各个领域只需要启动各自领域的基础工程，其他依赖工程和服务都在对应的环境部署。尽量保证与今后的测试，生产环境一致。
+
+**如有特殊要求需要修改本地配置，比如临时调整代码做测试等。可以通过如下方法设置。**
+
+> 配置中心默认在本机缓存配置文件，以配置中心服务不可用时保证系统可以启用。缓存路径为
+>
+> /opt/data/$appId/config-cache/XXX.properties（Mac/Linux）
+>
+> C:\opt\data\\$appId\config-cache\XXX.properties（Windows）
+
+如图：
+
+![1566200012436](C:\Users\tzm\AppData\Roaming\Typora\typora-user-images\1566200012436.png)
+
+
+
+Apollo客户端还支持本地开发模式，这个主要用于当开发环境无法连接Apollo服务器的时候，或者需要临时增加特殊配置的时候。
+
+在本地开发模式下，Apollo只会从本地文件读取配置信息，不会从Apollo服务器读取配置。
+
+可以通过下面的步骤开启Apollo本地开发模式。
+
+### 1.本地开发修改环境
+
+> 修改/opt/settings/server.properties（Mac/Linux）或C:\opt\settings\server.properties（Windows）文件，设置env为Local：
+
+```
+env=Local
+```
+
+如图:
+
+![1566200214754](C:\Users\tzm\AppData\Roaming\Typora\typora-user-images\1566200214754.png)
+
+![1566200231980](C:\Users\tzm\AppData\Roaming\Typora\typora-user-images\1566200231980.png)
+
+此时会读取本地缓存的配置文件，可以自行添加修改后启动项目。
+
+
+
+### 2.阿里云配置中心本地开发使用
+
+针对某些项目本机的开发环境需要使用阿里云部署的配置中心，如果直接配置阿里云的公网地址是无法拉取到配置的。因为Apollo的`apollo-configservice`和`apollo-adminservice`是基于内网可信网络设计的，所以出于安全考虑，不会将`apollo-configservice`和`apollo-adminservice`直接暴露在公网。
+
+> 解决办法：通过启动参数-Dapollo.configService=http://config-service的公网IP:端口来跳过meta service的服务发现
+
+![1568286099488](C:\Users\tzm\AppData\Roaming\Typora\typora-user-images\1568286099488.png)
+
+
+
+### 3.前端配置接入配置中心
+
+目前前端工程有配置项目跟代码工程剥离的需求，所以Apollo配置中心提供基于Restfull的配置拉取API。具体使用方法如下：
+
+####  3.1通过带缓存的Http接口从Apollo读取配置
+
+该接口会从缓存中获取配置，适合频率较高的配置拉取请求，如简单的每30秒轮询一次配置。
+
+由于缓存最多会有一秒的延时，所以如果需要配合配置推送通知实现实时更新配置的话，请使用[3.2 通过不带缓存的Http接口从Apollo读取配置]()
+
+##### 3.1.1 Http接口说明
+
+**URL**: {config_server_url}/configfiles/json/{appId}/{clusterName}/{namespaceName}?ip={clientIp}
+
+**Method**: GET
+
+| 参数名            | 是否必须 | 参数值               | 备注                                                         |
+| ----------------- | -------- | -------------------- | ------------------------------------------------------------ |
+| config_server_url | 是       | Apollo配置服务的地址 |                                                              |
+| appId             | 是       | 应用的appId          |                                                              |
+| clusterName       | 是       | 集群名               | 一般情况下传入 default 即可。 如果希望配置按集群划分，可以参考[集群独立配置说明]()做相关配置，然后在这里填入对应的集群名。 |
+| namespaceName     | 是       | Namespace的名字      | 如果没有新建过Namespace的话，传入application即可。 如果创建了Namespace，并且需要使用该Namespace的配置，则传入对应的Namespace名字。**需要注意的是对于properties类型的namespace，只需要传入namespace的名字即可，如application。对于其它类型的namespace，需要传入namespace的名字加上后缀名，如datasources.json** |
+| ip                | 否       | 应用部署的机器ip     | 这个参数是可选的，用来实现灰度发布。 如果不想传这个参数，请注意URL中从?号开始的query parameters整个都不要出现。 |
+
+使用公司环境测试 http://192.168.10.132:8080/configfiles/json/demo/default/application
+
+##### 	3.1.2 Http接口返回格式
+
+该Http接口返回的是JSON格式、UTF-8编码，包含了对应namespace中所有的配置项。
+
+返回内容Sample如下：
+
+![1570792899353](C:\Users\tzm\AppData\Roaming\Typora\typora-user-images\1570792899353.png)
+
+
+
+#### 3.2 通过不带缓存的Http接口从Apollo读取配置
+
+该接口会直接从数据库中获取配置，可以配合配置推送通知实现实时更新配置。
+
+##### 3.2.1 Http接口说明
+
+**URL**: {config_server_url}/configs/{appId}/{clusterName}/{namespaceName}?releaseKey={releaseKey}&ip={clientIp}
+
+**Method**: GET
+
+**参数说明**
+
+| 参数名            | 是否必须 | 参数值               | 备注                                                         |
+| ----------------- | -------- | -------------------- | ------------------------------------------------------------ |
+| config_server_url | 是       | Apollo配置服务的地址 |                                                              |
+| appId             | 是       | 应用的appId          |                                                              |
+| clusterName       | 是       | 集群名               | 一般情况下传入 default 即可。 如果希望配置按集群划分，可以参考[集群独立配置说明]()做相关配置，然后在这里填入对应的集群名。 |
+| namespaceName     | 是       | Namespace的名字      | 如果没有新建过Namespace的话，传入application即可。 如果创建了Namespace，并且需要使用该Namespace的配置，则传入对应的Namespace名字。**需要注意的是对于properties类型的namespace，只需要传入namespace的名字即可，如application。对于其它类型的namespace，需要传入namespace的名字加上后缀名，如datasources.json** |
+| releaseKey        | 否       | 上一次的releaseKey   | 将上一次返回对象中的releaseKey传入即可，用来给服务端比较版本，如果版本比下来没有变化，则服务端直接返回304以节省流量和运算 |
+| ip                | 否       | 应用部署的机器ip     | 这个参数是可选的，用来实现灰度发布。                         |
+
+使用公司环境测试 http://192.168.10.132:8080/configs/demo/default/application
+
+##### 3.2.2 Http接口返回格式
+
+该Http接口返回的是JSON格式、UTF-8编码。
+
+如果配置没有变化（传入的releaseKey和服务端的相等），则返回HttpStatus 304，response body为空。
+
+如果配置有变化，则会返回HttpStatus 200，response body为对应namespace的meta信息以及其中所有的配置项。
+
+返回内容Sample如下：
+
+![1570793098314](C:\Users\tzm\AppData\Roaming\Typora\typora-user-images\1570793098314.png)
+
+
+
+> server.properties的配置文件还可以设置多环境，集群，appid切换等。目前开发暂时用不到这些配置。后续根据情况再跟大家补充相关配置的使用讲解。
