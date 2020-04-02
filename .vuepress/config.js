@@ -22,8 +22,8 @@ module.exports = {
     },
     head: [["link", {rel: "icon", href: `/favicon.ico`}]],
     themeConfig: {
-        repo: "iiishenggg/liiishenggg.github.io",
-        docsRepo: "iiishenggg/liiishenggg.github.io",
+        repo: "github.com/liiishenggg/newBook",
+        docsRepo: "github.com/liiishenggg/newBook",
         editLinks: true,
         locales: {
             "/": {
